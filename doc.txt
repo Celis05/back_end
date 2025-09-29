@@ -1,0 +1,20 @@
+#1 .env, conexión a Mongo y servidor para arrancar el app
+#2 index.js raíz es el punto de entrada para el app
+#3 carpeta src :
+{
+    
+    /src/app.js: esta es la configuración de Express
+    /src/config/mongo.js: conexión a nuestra base de datos (MongoDB Atlas)
+    /src/routes/index.js: rutas iniciales de nuestro proyecto
+    /src/routes/auth.js: Encontramos las rutas para autenticación de login o registro
+    /src/routes/movements.js: Tenemos las rutas para movimiento
+    /src/routes/admin.js: Aquí tenemos la ruta de nuestro admin
+    /src/models/User.js: El modelo de los usuarios
+    /src/models/Movement.js: Este es el modelo del movimiento en mongoose
+    /src/models/admin.js: modelo del administrador que otorga el acceso especial para este
+    /src/controller/authController.js: Aquí se encuentra nuestra lógica de registro y login 
+    /src/controller/movementController.js: Aquí encontramos el controlador del movimiento
+    /src/controller/adminController.js: Tenemos el controlador para nuestro apartado de admin
+    /src/middlewares/auth.js: Con este se protegen las rutas JWT 
+
+}

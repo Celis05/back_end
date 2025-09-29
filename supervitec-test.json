@@ -1,0 +1,113 @@
+{
+  "info": {
+    "_postman_id": "b7f05315-540f-4a29-a435-7b16d107dc90",
+    "name": "Pruebas Backend Supervitec",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Actualizar Usuario - Éxito",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer TU_TOKEN_DE_ADMIN",
+            "type": "text"
+          },
+          { "key": "Content-Type", "value": "application/json", "type": "text" }
+        ],
+        "url": {
+          "raw": "http://192.168.1.2:3000/admin/users/ID_DEL_USUARIO",
+          "protocol": "http",
+          "host": ["192.168.1.2"],
+          "port": "3000",
+          "path": ["admin", "users", "ID_DEL_USUARIO"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre_completo\": \"Nombre Actualizado\",\n  \"correo_electronico\": \"nuevoemail@ejemplo.com\"\n}"
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Actualizar Usuario - Error Validación",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer TU_TOKEN_DE_ADMIN",
+            "type": "text"
+          },
+          { "key": "Content-Type", "value": "application/json", "type": "text" }
+        ],
+        "url": {
+          "raw": "http://192.168.1.2:3000/admin/users/ID_DEL_USUARIO",
+          "protocol": "http",
+          "host": ["192.168.1.2"],
+          "port": "3000",
+          "path": ["admin", "users", "ID_DEL_USUARIO"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"correo_electronico\": \"correo-invalido\"\n}"
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Actualizar Movimiento - Éxito",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer TU_TOKEN_DE_ADMIN",
+            "type": "text"
+          },
+          { "key": "Content-Type", "value": "application/json", "type": "text" }
+        ],
+        "url": {
+          "raw": "http://192.168.1.2:3000/admin/movements/ID_DEL_MOVIMIENTO",
+          "protocol": "http",
+          "host": ["192.168.1.2"],
+          "port": "3000",
+          "path": ["admin", "movements", "ID_DEL_MOVIMIENTO"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"cantidad\": 1500,\n  \"descripcion\": \"Actualización de movimiento\",\n  \"tipo\": \"ingreso\",\n  \"fecha\": \"2025-08-18\"\n}"
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Actualizar Movimiento - Error Validación",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer TU_TOKEN_DE_ADMIN",
+            "type": "text"
+          },
+          { "key": "Content-Type", "value": "application/json", "type": "text" }
+        ],
+        "url": {
+          "raw": "http://192.168.1.2:3000/admin/movements/ID_DEL_MOVIMIENTO",
+          "protocol": "http",
+          "host": ["192.168.1.2"],
+          "port": "3000",
+          "path": ["admin", "movements", "ID_DEL_MOVIMIENTO"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"tipo\": \"tipo_invalido\"\n}"
+        }
+      },
+      "response": []
+    }
+  ]
+}

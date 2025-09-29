@@ -1,0 +1,64 @@
+{
+  "name": "supervitec-backend",
+  "version": "1.0.0",
+  "description": "SupervitecApp - Sistema de Seguridad y Salud en el Trabajo",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest",
+    "build": "npm install --production",
+    "postinstall": "echo 'Dependencies installed successfully'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Celis05/supervitecback.git"
+  },
+  "keywords": [
+    "supervitec",
+    "safety",
+    "api",
+    "express",
+    "mongodb"
+  ],
+  "author": "SupervitecApp Team",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Celis05/supervitecback/issues"
+  },
+  "homepage": "https://github.com/Celis05/supervitecback#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.10.0",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.2.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.29.4",
+    "mongoose": "^7.5.0",
+    "morgan": "^1.10.0",
+    "node-cron": "^3.0.2",
+    "nodemailer": "^6.9.4",
+    "xlsx": "^0.18.5",
+    "xss-clean": "^0.1.4"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "jest": "^29.6.2",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
+  }
+}
