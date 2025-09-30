@@ -136,10 +136,10 @@ const corsOptions = {
       ? process.env.CORS_ORIGINS.split(',').map(url => url.trim())
       : [
           'http://localhost:3000',
-          'http://localhost:3001', 
+          'http://localhost:3000', 
           'http://localhost:8081',
-          'http://localhost:19006',
-          'https://supervitec-app.onrender.com',
+          'http://localhost:3000',
+          'https://back-end-fjnh.onrender.com',
           'https://supervitec-app.netlify.app',
           'https://supervitec-app.vercel.app',
           'exp://localhost:8081'
