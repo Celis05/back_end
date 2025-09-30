@@ -81,8 +81,7 @@ const corsOptions = {
     // Lista de dominios permitidos
     const allowedOrigins = [
       'http://localhost:3000',      // Desarrollo React
-      'http://localhost:5000
-      ',      // Desarrollo alternativo
+      'http://localhost:5000',      // Desarrollo alternativo
       'http://localhost:8081',     // Expo web
       'https://supervitec-app.netlify.app',   // Frontend en Netlify
       'https://back-end-fjnh.onrender.com/api/v1',    // Frontend en Vercel
