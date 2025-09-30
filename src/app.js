@@ -81,12 +81,13 @@ const corsOptions = {
     // Lista de dominios permitidos
     const allowedOrigins = [
       'http://localhost:3000',      // Desarrollo React
-      'http://localhost:3001',      // Desarrollo alternativo
-      'http://localhost:19006',     // Expo web
+      'http://localhost:5000
+      ',      // Desarrollo alternativo
+      'http://localhost:8081',     // Expo web
       'https://supervitec-app.netlify.app',   // Frontend en Netlify
-      'https://supervitec-app.vercel.app',    // Frontend en Vercel
+      'https://back-end-fjnh.onrender.com/api/v1',    // Frontend en Vercel
       'https://www.supervitecapp.com',        // Dominio personalizado
-      'https://supervitecapp.com',            // Dominio sin www
+      'https://back-end-fjnh.onrender.com',            // Dominio sin www
       process.env.FRONTEND_URL,               // URL del frontend desde ENV
     ].filter(Boolean); // Remover valores undefined/null
 
