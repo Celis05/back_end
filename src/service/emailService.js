@@ -93,7 +93,7 @@ class EmailService {
           </div>
           
           <div style="text-align: center; margin: 30px 0;">
-            <a href="${process.env.FRONTEND_URL || 'https://supervitec-app.onrender.com'}" 
+            <a href="${process.env.FRONTEND_URL || 'https://back-end-fjnh.onrender.com'}" 
                style="background-color: #2196F3; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block;">
               🚀 Ingresar a la App
             </a>
@@ -117,7 +117,7 @@ class EmailService {
   }
 
   async sendPasswordResetEmail(userEmail, resetToken, userName) {
-    const resetUrl = `${process.env.FRONTEND_URL || 'https://supervitec-app.onrender.com'}/reset-password?token=${resetToken}`;
+    const resetUrl = `${process.env.FRONTEND_URL || 'https://back-end-fjnh.onrender.com'}/reset-password?token=${resetToken}`;
     
     const html = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f9f9f9;">

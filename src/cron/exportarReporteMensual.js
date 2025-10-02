@@ -658,7 +658,7 @@ function tareaNotificarUsuariosInactivos() {
                   <h2>Hola ${usuario.nombre_completo},</h2>
                   <p>Hace <strong>${diasInactivo} días</strong> que no registras movimientos en SupervitecApp.</p>
                   <p>¿Todo está bien? Nos encantaría verte de vuelta en el sistema.</p>
-                  <a href="${process.env.FRONTEND_URL || 'https://supervitec-app.com'}" class="cta-button">
+                  <a href="${process.env.FRONTEND_URL || 'https://back-end-fjnh.onrender.com'}" class="cta-button">
                     🚀 Volver a la App
                   </a>
                   <p style="font-size: 14px; color: #666;">

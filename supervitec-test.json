@@ -18,9 +18,9 @@
           { "key": "Content-Type", "value": "application/json", "type": "text" }
         ],
         "url": {
-          "raw": "http://192.168.1.2:3000/admin/users/ID_DEL_USUARIO",
+          "raw": "https://back-end-fjnh.onrender.com/admin/users/ID_DEL_USUARIO",
           "protocol": "http",
-          "host": ["192.168.1.2"],
+          "host": ["https://back-end-fjnh.onrender.com"],
           "port": "3000",
           "path": ["admin", "users", "ID_DEL_USUARIO"]
         },
@@ -44,9 +44,9 @@
           { "key": "Content-Type", "value": "application/json", "type": "text" }
         ],
         "url": {
-          "raw": "http://192.168.1.2:3000/admin/users/ID_DEL_USUARIO",
+          "raw": "https://back-end-fjnh.onrender.com/admin/users/ID_DEL_USUARIO",
           "protocol": "http",
-          "host": ["192.168.1.2"],
+          "host": ["https://back-end-fjnh.onrender.com"],
           "port": "3000",
           "path": ["admin", "users", "ID_DEL_USUARIO"]
         },
@@ -70,9 +70,9 @@
           { "key": "Content-Type", "value": "application/json", "type": "text" }
         ],
         "url": {
-          "raw": "http://192.168.1.2:3000/admin/movements/ID_DEL_MOVIMIENTO",
+          "raw": "https://back-end-fjnh.onrender.com/admin/movements/ID_DEL_MOVIMIENTO",
           "protocol": "http",
-          "host": ["192.168.1.2"],
+          "host": ["https://back-end-fjnh.onrender.com"],
           "port": "3000",
           "path": ["admin", "movements", "ID_DEL_MOVIMIENTO"]
         },
@@ -96,9 +96,9 @@
           { "key": "Content-Type", "value": "application/json", "type": "text" }
         ],
         "url": {
-          "raw": "http://192.168.1.2:3000/admin/movements/ID_DEL_MOVIMIENTO",
+          "raw": "https://back-end-fjnh.onrender.com/admin/movements/ID_DEL_MOVIMIENTO",
           "protocol": "http",
-          "host": ["192.168.1.2"],
+          "host": ["https://back-end-fjnh.onrender.com"],
           "port": "3000",
           "path": ["admin", "movements", "ID_DEL_MOVIMIENTO"]
         },
