@@ -5,7 +5,6 @@ const connectDB = async () => {
     console.log('📡 Intentando conectar a MongoDB...');
     console.log('📡 URI:', process.env.MONGO_URI?.replace(/\/\/([^:]+):([^@]+)@/, '//$1:***@'));
     
-    // ✅ CONFIGURACIÓN CORRECTA PARA MONGODB 7.x
     const conn = await mongoose.connect(process.env.MONGO_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
